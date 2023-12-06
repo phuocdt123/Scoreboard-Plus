@@ -1012,12 +1012,12 @@ void ScoreboardMain::on_Hotkey_Checkbox_clicked(bool Hotkey1)
 
 void ScoreboardMain::hotkeys()
 {
-    if(GetAsyncKeyState(VK_LCONTROL) && Hotkey == true)
+    if(GetAsyncKeyState(VK_END) && Hotkey == true)
     {
         Home_Score++;
         ScoreboardMain::Changed();
     }
-    if(GetAsyncKeyState(VK_RCONTROL) && Hotkey == true)
+    if(GetAsyncKeyState(VK_HOME) && Hotkey == true)
     {
         Away_Score++;
         ScoreboardMain::Changed();
